@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let placeholder = '搜索书签...';
     switch (engine) {
       case 'google': placeholder = 'Google 搜索...'; break;
-      case 'baidu': placeholder = '百度搜索...'; break;
+      case 'Bing': placeholder = 'Bing 搜索...'; break;
       case 'github': placeholder = 'GitHub 搜索...'; break;
     }
 
@@ -338,7 +338,7 @@ document.addEventListener('DOMContentLoaded', function () {
           let url = '';
           switch (currentSearchEngine) {
             case 'google': url = `https://www.google.com/search?q=${encodeURIComponent(query)}`; break;
-            case 'baidu': url = `https://www.baidu.com/s?wd=${encodeURIComponent(query)}`; break;
+            case 'baidu': url = `https://www.bing.com/search?form=${encodeURIComponent(query)}`; break;
             case 'github': url = `https://github.com/search?q=${encodeURIComponent(query)}`; break;
           }
           if (url) window.open(url, '_blank');
